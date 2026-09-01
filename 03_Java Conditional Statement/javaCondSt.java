@@ -6,12 +6,12 @@ public class javaCondSt {
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
 
-        if (num > 0) {
-            System.out.println(num + " is positive.");
-        } else if (num < 0) {
-            System.out.println(num + " is negative.");
+        if (num % 2 ==0) {
+            System.out.println(num + " is Even.");
+        } else if (num % 2 != 0) {
+            System.out.println(num + " is Odd.");
         } else {
-            System.out.println("The number is zero.");
+            System.out.println("The number is either zero or negative.");
         }
 
         sc.close();
