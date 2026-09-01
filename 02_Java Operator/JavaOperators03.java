@@ -111,27 +111,27 @@
 
 // ~ ==================== ASSIGNMENT OPERATORS ====================
 
-// public class JavaOperators03 {
+public class JavaOperators03 {
 
-//     public static void main(String args[]) {
+    public static void main(String args[]) {
 
-//         int A = 10;
+        int A = 10;
 
-//         A += 5;     // A = A + 5
-//         System.out.println(A);
+        A += 5;     // A = A + 5
+        System.out.println(A);
 
-//         A -= 3;     // A = A - 3
-//         System.out.println(A);
+        A -= 3;     // A = A - 3
+        System.out.println(A);
 
-//         A *= 2;     // A = A * 2
-//         System.out.println(A);
+        A *= 2;     // A = A * 2
+        System.out.println(A);
 
-//         A /= 4;     // A = A / 4
-//         System.out.println(A);
+        A /= 4;     // A = A / 4
+        System.out.println(A);
 
-//     }
+    }
 
-// }
+}
 
 // * Compound assignment operators provide a shorter way to update a variable.
 // * += → A = A + value
