@@ -5,14 +5,18 @@ public class Loop {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        int i = 1;
-        int sum = 0;
-        while(i<=n) {
-            sum = sum + i;
-            i++;
+        int num = sc.nextInt();
+        String even = "";
+        String odd = "";
+        for( int i = 1; i <= num; i++) {
+            if(i % 2 ==0) {
+                even = even + i + " ";
+            } else if(i % 2 != 0) {
+                odd = odd + i + " ";
+            }
         }
-        System.out.println("The sum of first " + n + " natural numbers is: " + sum);
+        System.out.println("Even = " + even );
+        System.out.println("Odd = " + odd);
         sc.close();
     }
 
