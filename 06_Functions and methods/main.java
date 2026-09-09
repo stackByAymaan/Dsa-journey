@@ -66,18 +66,47 @@
 
 //? Factorial of a number using function (n! = n * (n-1) * (n-2) * ... * 1)
 
-public class Main {
+// public class Main {
 
-    public static int factorial(int n) {
-        int f = 1;
-        for(int i = 1; i <= n; i++) {
-            f = f * i;
-        }
-        return f;
-    }
+//     public static int factorial(int n) {
+//         int f = 1;
+//         for(int i = 1; i <= n; i++) {
+//             f = f * i;
+//         }
+//         return f;
+//     }
 
-    public static void main(String[] args) {
-       System.out.println(factorial(5));
+//     public static void main(String[] args) {
+//        System.out.println(factorial(5));
         
+//     }
+// }
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        int n = 7;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n; j++) {
+
+                if (i == j || i + j == n + 1) {
+                    System.out.print("* ");
+                } 
+                else if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("# ");
+                } 
+                else if ((i * j) % 3 == 0) {
+                    System.out.print("+ ");
+                } 
+                else {
+                    System.out.print(". ");
+                }
+            }
+
+            System.out.println();
+        }
     }
 }
