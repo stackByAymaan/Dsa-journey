@@ -25,19 +25,56 @@
 
 
 //* Call by value 
+// public class Main {
+
+//     public static void swap(int a, int b) {
+//         int temp = a;
+//         a = b;
+//         b = temp;
+
+//         System.out.println("a = " + a);
+//         System.out.println("b = " + b);  
+//     }
+
+//     public static void main(String[] args) {
+
+//         int a = 5;
+//         int b = 10;
+//         swap(a, b);
+//     }
+// }
+
+
+//? Product of two numbers using function
+
+// public class Main {
+
+//     public static int multiply(int a, int b) {
+        
+//         int product = a * b;
+
+//         System.out.println( "Product of a and b = " + product); 
+//         return product;
+//     }
+
+//     public static void main(String[] args) {
+       
+//         multiply(10, 20);
+//     }
+// }
+
+
+//? Factorial of a number using function (n! = n * (n-1) * (n-2) * ... * 1)
+
 public class Main {
 
+    public static int factorial(int n) {
+        
+        
+    }
+
     public static void main(String[] args) {
-       //Swap values exchange 
-        int a = 5;
-        int b = 10;
-
-        //Swap 
-        int temp = a;
-        a = b;
-        b = temp;
-
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);  
+       
+        
     }
 }
