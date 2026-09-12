@@ -105,18 +105,41 @@
 
 
 // Overloading using different data types
+// public class Main {
+
+//     public static int add(int a, int b) {
+//         return a + b;
+//     }
+
+//     public static double add(double a, double b) {
+//         return a + b;
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(add(5, 10));        // int
+//         System.out.println(add(5.5, 10.5));    // double
+//     }
+// }
+
+
+//? Check if number is prime or not
 public class Main {
 
-    public static int add(int a, int b) {
-        return a + b;
+    public static boolean isPrime(int n) {
+    boolean isPrime = true;
+    for(int i = 2; i<=n-1; i++) {
+        if(n % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    return isPrime;
     }
 
-    public static double add(double a, double b) {
-        return a + b;
-    }
 
     public static void main(String[] args) {
-        System.out.println(add(5, 10));        // int
-        System.out.println(add(5.5, 10.5));    // double
+        System.out.println(isPrime(7));  
+        System.out.println(isPrime(4));  
+        System.out.println(isPrime(11));  
     }
 }
