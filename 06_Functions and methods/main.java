@@ -235,22 +235,44 @@
 
 //* Decimal to Binary
 
+// public class Main {
+//     public static void decToBin(int n) {
+
+//         int pow = 0;
+//         int binNum = 0;
+//         int originalNum = n;
+
+//         while (n > 0) {
+//             int lastDigit = n % 2;
+//             binNum = binNum + (lastDigit * (int) Math.pow(10, pow));
+//             pow++;
+//             n = n / 2;
+//         }
+//         System.out.println("Binary of " + originalNum + " = " + binNum);
+//     }
+//     public static void main(String[] args) {
+//         decToBin(11);
+//     }
+// }
+
+
+//*  Scope
+
 public class Main {
-    public static void decToBin(int n) {
+    public static void myMethod() {
 
-        int pow = 0;
-        int binNum = 0;
-        int originalNum = n;
+        int a = 10; // Method scope
 
-        while (n > 0) {
-            int lastDigit = n % 2;
-            binNum = binNum + (lastDigit * (int) Math.pow(10, pow));
-            pow++;
-            n = n / 2;
+        if (true) {
+            int b = 20; // Block scope
+            System.out.println(a); // Accessible
+            System.out.println(b); // Accessible
         }
-        System.out.println("Binary of " + originalNum + " = " + binNum);
+
+        System.out.println(a); // Accessible
+        // System.out.println(b); // Error
     }
     public static void main(String[] args) {
-        decToBin(11);
+        myMethod();
     }
 }
