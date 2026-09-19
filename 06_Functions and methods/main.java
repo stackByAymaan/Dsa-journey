@@ -172,38 +172,62 @@
 // }
 
 
-//* Print all primes ina range
+//* Print all primes in a range
+
+// public class Main {
+//     public static boolean isPrime(int n) {
+
+//         if(n == 2) {
+//             return true;
+//         }
+
+//         for(int i = 2; i <= Math.sqrt(n); i++) {
+
+//             if(n % i == 0) {
+//                 return false;
+//             }
+//         }
+
+//         return true;
+//     }
+
+//     public static void primeInRange(int n) {
+
+//         for(int i = 2; i <= n; i++) {
+
+//             if(isPrime(i)) {
+//                 System.out.print(i + " ");
+//             }
+//         }
+//         System.out.println();
+//     }
+//     public static void main(String[] args) {
+
+//         System.out.println(isPrime(7));
+//         primeInRange(30);
+//     }
+// }  
+
+
+
+//* Binary to decimal
 
 public class Main {
-    public static boolean isPrime(int n) {
 
-        if(n == 2) {
-            return true;
+    public static void binToDec(int binNum) {
+        int pow = 0;
+        int decNum = 0;
+        int originalBin = binNum;
+
+        while (binNum > 0) {
+            int lastDigit = binNum % 10;
+            decNum = decNum + (lastDigit * (int) Math.pow(2, pow));
+            pow++;
+            binNum = binNum / 10;
         }
-
-        for(int i = 2; i <= Math.sqrt(n); i++) {
-
-            if(n % i == 0) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    public static void primeInRange(int n) {
-
-        for(int i = 2; i <= n; i++) {
-
-            if(isPrime(i)) {
-                System.out.print(i + " ");
-            }
-        }
-        System.out.println();
+        System.out.println("decimal of " + originalBin + " = " + decNum);
     }
     public static void main(String[] args) {
-
-        System.out.println(isPrime(7));
-        primeInRange(30);
+        binToDec(101);
     }
 }
