@@ -212,22 +212,45 @@
 
 //* Binary to decimal
 
+// public class Main {
+
+//     public static void binToDec(int binNum) {
+//         int pow = 0;
+//         int decNum = 0;
+//         int originalBin = binNum;
+
+//         while (binNum > 0) {
+//             int lastDigit = binNum % 10;
+//             decNum = decNum + (lastDigit * (int) Math.pow(2, pow));
+//             pow++;
+//             binNum = binNum / 10;
+//         }
+//         System.out.println("decimal of " + originalBin + " = " + decNum);
+//     }
+//     public static void main(String[] args) {
+//         binToDec(101);
+//     }
+// }
+
+
+//* Decimal to Binary
+
 public class Main {
+    public static void decToBin(int n) {
 
-    public static void binToDec(int binNum) {
         int pow = 0;
-        int decNum = 0;
-        int originalBin = binNum;
+        int binNum = 0;
+        int originalNum = n;
 
-        while (binNum > 0) {
-            int lastDigit = binNum % 10;
-            decNum = decNum + (lastDigit * (int) Math.pow(2, pow));
+        while (n > 0) {
+            int lastDigit = n % 2;
+            binNum = binNum + (lastDigit * (int) Math.pow(10, pow));
             pow++;
-            binNum = binNum / 10;
+            n = n / 2;
         }
-        System.out.println("decimal of " + originalBin + " = " + decNum);
+        System.out.println("Binary of " + originalNum + " = " + binNum);
     }
     public static void main(String[] args) {
-        binToDec(101);
+        decToBin(11);
     }
 }
