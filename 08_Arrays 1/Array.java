@@ -31,6 +31,13 @@ public class Array {
         System.out.println("chem : " + marks[1]);
         System.out.println("Bio : " + marks[2]);
 
+        //Update
+        // marks[2] = 100;
+        marks[2] = marks[2] + 20;
+        System.out.println("Updated marks in Bio : " + marks[2]);
+
+        System.out.println("length of array = " + marks.length);
+
         sc.close();
     }
 }
