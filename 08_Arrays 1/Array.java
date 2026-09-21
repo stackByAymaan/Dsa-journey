@@ -44,22 +44,50 @@
 
 //* Passing Arrays as an argument
 
-import java.util.*;
+// public class Array {
+//     public static void update (int marks[] , int nonChangable) {
+//         nonChangable = 10;
+//         for(int i = 0; i <marks.length; i++) {
+//             marks[i] = marks[i] + 1;
+//         }
+//     }
+//     public static void main(String args[]) {
+//         int marks[] = {97, 98, 99};
+//         int nonChnagable = 5;
+//         update(marks, nonChnagable);
+//         System.out.println( nonChnagable);
+
+//         //print our marks
+//         for(int i = 0; i<marks.length; i++) {
+//             System.out.print(marks[i] + " ");
+//         }
+//         System.out.println();
+//     }
+// }
+
+
+//* Linear Search
+
 public class Array {
-    public static void update (int marks[]) {
-        for(int i = 0; i <marks.length; i++) {
-            marks[i] = marks[i] + 1;
+     
+    public static int linearSearch(int numbers[], int key) {
+        for(int i = 0; i<numbers.length; i++) {
+            if (numbers[i] == key) {
+                return i;
+            }
         }
+        return -1;
     }
     public static void main(String args[]) {
-        int marks[] = {97, 98, 99};
-        update(marks);
-
-        //print our marks
-        for(int i = 0; i<marks.length; i++) {
-            System.out.print(marks[i] + " ");
+        int numbers[] = {2, 4, 6,8, 10, 12, 14, 16};
+        int key = 10;
+       
+        int index = linearSearch(numbers, key);
+        if(index == -1) {
+            System.out.println("not Found");
+        } else {
+            System.out.println("key is at index : " +  index);
         }
-        System.out.println();
     }
 }
 
