@@ -161,7 +161,7 @@
 
 public class Array {
     public static void reverse(int numbers[]) {
-           int first = 0 , last = numbers.length;
+           int first = 0 , last = numbers.length - 1;
            while(first < last) {
 
             //swap
