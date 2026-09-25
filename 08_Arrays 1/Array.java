@@ -186,19 +186,38 @@
 
 //* Pairs in an Array
 
-public class Array {
-    public static void printPairs(int number[]) {
-        for(int i= 0; i<number.length; i++) {
-            int curr = number[i];
-            for(int j = i+1; j<number.length; j++) {
-                System.out.print("(" + curr + " ," + number[i] + ")");
-            }
-            System.out.println();
-        }
+// public class Array {
+//     public static void printPairs(int number[]) {
+//         for(int i= 0; i<number.length; i++) {
+//             int curr = number[i];
+//             for(int j = i+1; j<number.length; j++) {
+//                 System.out.print("(" + curr + " ," + number[i] + ")");
+//             }
+//             System.out.println();
+//         }
 
-    }
-             public static void main(String[] args) {
-                int number[] = {2, 4, 6, 8, 10};
-                printPairs(number);
+//     }
+//              public static void main(String[] args) {
+//                 int number[] = {2, 4, 6, 8, 10};
+//                 printPairs(number);
+//     }
+// }
+
+
+//* Print Subarrays
+public class Array {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+
+                for (int k = i; k <= j; k++) {
+                    System.out.print(arr[k] + " ");
+                }
+
+                System.out.println();
+            }
+        }
     }
 }
