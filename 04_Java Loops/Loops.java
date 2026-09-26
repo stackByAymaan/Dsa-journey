@@ -1,9 +1,9 @@
-// ^ ==================== LOOPS ====================
+//^ ==================== LOOPS ====================
 
-// * Loop is used to repeat a block of code multiple times until a certain condition is met.
+//* Loop is used to repeat a block of code multiple times until a certain condition is met.
 
 
-// ^ ==================== WHILE LOOP ====================
+//^ ==================== WHILE LOOP ====================
 
 // public class Loops {
 
@@ -20,12 +20,12 @@
 
 // }
 
-// * while loop checks the condition first.
-// * If the condition is true, the loop executes.
-// * counter++ updates the value so the loop can eventually stop.
+//* while loop checks the condition first.
+//* If the condition is true, the loop executes.
+//* counter++ updates the value so the loop can eventually stop.
 
 
-// ? PRINT NUMBERS FROM 1 TO 10 USING WHILE LOOP
+//? PRINT NUMBERS FROM 1 TO 10 USING WHILE LOOP
 
 // public class Loops {
 
@@ -43,7 +43,7 @@
 // }
 
 
-// ? PRINT NUMBERS FROM 1 TO n USING WHILE LOOP
+//? PRINT NUMBERS FROM 1 TO n USING WHILE LOOP
 
 // import java.util.Scanner;
 
@@ -68,7 +68,7 @@
 // }
 
 
-// ? SUM OF FIRST n NATURAL NUMBERS
+//? SUM OF FIRST n NATURAL NUMBERS
 
 // import java.util.Scanner;
 
@@ -95,10 +95,10 @@
 
 // }
 
-// * Example: n = 5 → 1 + 2 + 3 + 4 + 5 = 15.
+//* Example: n = 5 → 1 + 2 + 3 + 4 + 5 = 15.
 
 
-// ^ ==================== FOR LOOP ====================
+//^ ==================== FOR LOOP ====================
 
 // public class Loops {
 
@@ -112,11 +112,11 @@
 
 // }
 
-// * for loop is useful when the number of iterations is known.
-// * Syntax: for(initialization; condition; update)
+//* for loop is useful when the number of iterations is known.
+//* Syntax: for(initialization; condition; update)
 
 
-// ? PRINT SQUARE PATTERN
+//? PRINT SQUARE PATTERN
 
 // public class Loops {
 
@@ -130,14 +130,14 @@
 
 // }
 
-// * Output:
-// * ****
-// * ****
-// * ****
-// * ****
+//* Output:
+//* ****
+//* ****
+//* ****
+//* ****
 
 
-// ? REVERSE OF A GIVEN NUMBER
+//? REVERSE OF A GIVEN NUMBER
 
 // import java.util.Scanner;
 
@@ -159,12 +159,12 @@
 
 // }
 
-// * n % 10 extracts the last digit.
-// * n / 10 removes the last digit.
-// * Example: 10899 → 99801.
+//* n % 10 extracts the last digit.
+//* n / 10 removes the last digit.
+//* Example: 10899 → 99801.
 
 
-// ^ ==================== DO-WHILE LOOP ====================
+//^ ==================== DO-WHILE LOOP ====================
 
 // import java.util.Scanner;
 
@@ -185,13 +185,13 @@
 
 // }
 
-// * do-while executes the block first and checks the condition afterwards.
-// * Therefore, it executes at least once.
+//* do-while executes the block first and checks the condition afterwards.
+//* Therefore, it executes at least once.
 
 
-// ^ ==================== BREAK STATEMENT ====================
+//^ ==================== BREAK STATEMENT ====================
 
-// ? KEEP ENTERING NUMBERS UNTIL USER ENTERS A MULTIPLE OF 10
+//? KEEP ENTERING NUMBERS UNTIL USER ENTERS A MULTIPLE OF 10
 
 // import java.util.Scanner;
 
@@ -218,16 +218,16 @@
 
 // }
 
-// * break immediately terminates the loop.
-// * It is useful when a loop should stop before its normal condition becomes false.
+//* break immediately terminates the loop.
+//* It is useful when a loop should stop before its normal condition becomes false.
 
 
-// ^ ==================== CONTINUE STATEMENT ====================
+//^ ==================== CONTINUE STATEMENT ====================
 
-// * continue skips the current iteration and moves to the next iteration of the loop.
+//* continue skips the current iteration and moves to the next iteration of the loop.
 
 
-// ? PRINT NUMBERS FROM 1 TO 10 EXCEPT MULTIPLES OF 3
+//? PRINT NUMBERS FROM 1 TO 10 EXCEPT MULTIPLES OF 3
 
 // public class Loops {
 
@@ -246,11 +246,11 @@
 
 // }
 
-// * continue skips only the current iteration.
-// * The loop itself does not terminate.
+//* continue skips only the current iteration.
+//* The loop itself does not terminate.
 
 
-// ? CHECK IF A NUMBER IS PRIME OR NOT
+//? CHECK IF A NUMBER IS PRIME OR NOT
 
 import java.util.Scanner;
 
