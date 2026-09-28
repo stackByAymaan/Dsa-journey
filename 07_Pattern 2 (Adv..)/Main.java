@@ -1,45 +1,54 @@
 public class Main {
 
-    public static void printHourglass(int n) {
+    public static void printSpiral(int n) {
 
-        // Upper half
-        for (int i = n; i >= 1; i--) {
+        int[][] arr = new int[n][n];
 
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
+        int top = 0, bottom = n - 1;
+        int left = 0, right = n - 1;
+        int num = 1;
+
+        while (top <= bottom && left <= right) {
+
+            // Left to right
+            for (int j = left; j <= right; j++) {
+                arr[top][j] = num++;
             }
+            top++;
 
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                if (j == 1 || j == 2 * i - 1 || i == n) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
+            // Top to bottom
+            for (int i = top; i <= bottom; i++) {
+                arr[i][right] = num++;
+            }
+            right--;
+
+            // Right to left
+            if (top <= bottom) {
+                for (int j = right; j >= left; j--) {
+                    arr[bottom][j] = num++;
                 }
+                bottom--;
             }
 
-            System.out.println();
+            // Bottom to top
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) {
+                    arr[i][left] = num++;
+                }
+                left++;
+            }
         }
 
-        // Lower half
-        for (int i = 2; i <= n; i++) {
-
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
+        // Print the spiral
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.printf("%4d", arr[i][j]);
             }
-
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                if (j == 1 || j == 2 * i - 1 || i == n) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
-            }
-
             System.out.println();
         }
     }
 
     public static void main(String[] args) {
-        printHourglass(5);
+        printSpiral(5);
     }
 }
