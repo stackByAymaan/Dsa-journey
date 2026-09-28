@@ -1,41 +1,38 @@
 public class Main {
 
-    public static void printButterfly(int n) {
+    public static void printHourglass(int n) {
 
         // Upper half
-        for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i--) {
 
-            // Left stars
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-
-            // Middle spaces
-            for (int j = 1; j <= 2 * (n - i); j++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            // Right stars
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (j == 1 || j == 2 * i - 1 || i == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
 
             System.out.println();
         }
 
         // Lower half
-        for (int i = n; i >= 1; i--) {
+        for (int i = 2; i <= n; i++) {
 
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-
-            for (int j = 1; j <= 2 * (n - i); j++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (j == 1 || j == 2 * i - 1 || i == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
 
             System.out.println();
@@ -43,6 +40,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        printButterfly(5);
+        printHourglass(5);
     }
 }
