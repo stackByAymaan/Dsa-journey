@@ -1,4 +1,4 @@
-// ^ ==================== IF-ELSE ====================
+//^ IF-ELSE STATEMENT
 
 // import java.util.*;
 // public class javaCondSt {
