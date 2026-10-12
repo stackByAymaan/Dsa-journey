@@ -1,4 +1,4 @@
-// Q1.Make a income tax calculaor using if-else 
+//? Q1.Make a income tax calculaor using if-else 
 
 // import java.util.*;
 
@@ -80,7 +80,7 @@
 // }
 
 
-// Q2. Input 3 numbers: A, B, and C. Output their average.
+//? Q2. Input 3 numbers: A, B, and C. Output their average.
 
 // import java.util.Scanner;
 
@@ -107,31 +107,90 @@
 
 
 
-// Q3.  Enter cost of 3 items from the user (using float data type) - a pencil, a pen and  an eraser. You have to output the total cost of the items back to the user as their bill.
-//(Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem)
+//? Q3.  Enter cost of 3 items from the user (using float data type) - a pencil, a pen and  an eraser. You have to output the total cost of the items back to the user as their bill.
+//? (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem)
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+// public class Main {
+//     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter cost of pencil: ");
-        float pencil = sc.nextFloat();
-        System.out.print("Enter cost of pen: ");
-        float pen = sc.nextFloat();
-        System.out.print("Enter cost of eraser: ");
-        float eraser = sc.nextFloat();
+//         System.out.print("Enter cost of pencil: ");
+//         float pencil = sc.nextFloat();
+//         System.out.print("Enter cost of pen: ");
+//         float pen = sc.nextFloat();
+//         System.out.print("Enter cost of eraser: ");
+//         float eraser = sc.nextFloat();
 
-        float totalCost = pencil + pen + eraser;
-        System.out.println("Total cost of items: " + totalCost);
+//         float totalCost = pencil + pen + eraser;
+//         System.out.println("Total cost of items: " + totalCost);
 
-        float gst = ( totalCost * 18) / 100;
-        System.out.println("GST (18%): " + gst);
+//         float gst = ( totalCost * 18) / 100;
+//         System.out.println("GST (18%): " + gst);
 
-        sc.close();
-    }
-}
+//         sc.close();
+//     }
+// }
+
+
+//? Q4. Write a Java program to input week number(1-7) and print day of week name using switch case.
+
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter week number (1-7) : ");
+//         int num = sc.nextInt();
+
+//         switch(num) {
+//             case 1:
+//                 System.out.println("Monday");
+//                 break;
+            
+                
+//             case 2:
+//                 System.out.println("Tuesday");
+//                 break;
+            
+                
+//             case 3:
+//                 System.out.println("Wednesday");
+//                 break;
+            
+                
+//             case 4:
+//                 System.out.println("Thrusday");
+//                 break;
+            
+                
+//             case 5:
+//                 System.out.println("friday");
+//                 break;
+            
+                
+//             case 6:
+//                 System.out.println("saturday");
+//                 break;
+            
+                
+//             case 7:
+//                 System.out.println("Sunday");
+//                 break;
+            
+//             default:
+//                System.out.println("Invalid number");    
+//         }
+
+        
+//         sc.close();
+//     }
+// }
+
+
 
